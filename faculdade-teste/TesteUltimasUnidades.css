@@ -1,0 +1,154 @@
+body { background: rgb(250, 250, 250); font-size: 18px; font-family: calibri;}
+
+.container div { color: white;}
+
+.container { 
+    display: grid; grid-template-columns: 2fr 2fr auto; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a a a"
+    "b b c"
+    "d e c"
+    "f f f";
+    gap: 7px;}
+
+a { text-decoration: none; color: rgb(255, 255, 255);}
+
+#textbusca { background-color:white;
+            font-size:18px;
+            border:none;
+            height:25px;
+            width:97%;
+            font-style: italic;
+            padding: 5px;
+            margin-bottom: 15px;}
+
+.outrosjogos { text-align: center;
+               background: #363434;
+               padding: 5px;
+               margin: 15px;}
+
+.rumores { text-align: center;
+           background: #363434;
+           padding: 5px;
+           margin: 15px;}
+
+.artigo { padding: 15px;}
+
+.botao { float: right; margin: 5px;}
+
+#ml { background: rgb(255, 255, 255);
+      color: black;
+      margin: 0;
+      padding: 9%;}
+
+h2 { background: #363434;
+     margin: 0 auto;
+     padding: 8px;}
+
+header { background: rgb(143, 143, 143);
+         color: rgb(255, 255, 255);
+         padding: 1px;
+         text-align: center;}
+
+nav {   background: rgb(43, 43, 43);
+        color:white;
+        grid-area: a;
+        text-align: center;
+        padding: 20px;} 
+        
+#item2 { background: rgb(73, 73, 73);
+         grid-area: b;}
+
+
+#img1 { float: left;
+       width: 150px;
+       padding: 10px;
+       border: #000000 solid;
+       margin: 10px;
+       margin-top: 35px;}
+
+.img .img1 { padding: 10px;
+             border: #000000 solid;
+             margin: 5px;
+             width: 150px;
+             height: 150px;}
+    
+.img{ margin-top: 15px;}
+
+#item3 { background:  rgb(73, 73, 73);
+         grid-area: c;
+         padding: 15px;}
+
+#item4 { background: rgb(73, 73, 73);
+         grid-area: d;}
+
+#item5 { background: rgb(73, 73, 73);
+         grid-area: e;}
+
+#item6 { background: rgb(68, 68, 68);
+         text-align: center;
+         grid-area: f;
+         height: 30px;
+         padding-bottom: 20px;}
+
+#botao { text-align:right;}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "a a"
+        "b b"
+        "d d"
+        "e e"
+        "c c"
+        "f f"
+        ;
+        gap: 15px;
+    }
+
+    #txtbusca {
+        width: 98%;
+    }
+
+    header {
+        padding:50px;
+    }
+
+}
+
+@media screen and (max-width: 1337px) {
+.img .img1 {
+    padding: 10px;
+    border: #FFFFFF solid;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header {
+        display: none;
+    }
+
+    .container {
+       gap: 15px;
+    }
+    
+    nav {   background: rgb(43, 43, 43);
+        color: white;
+        grid-area: a;
+        text-align: center;
+        padding: 20px;} 
+
+     .img .img1 { padding: 10px;
+        border: #000000 solid;
+        margin: 5px;
+        width: 180px;
+        height: 180px;}
+}
+
